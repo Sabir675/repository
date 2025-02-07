@@ -1,5 +1,6 @@
 package Lesson27;
 
-public class Transport {
-
+public abstract class Transport {
+	abstract void start();
+	abstract void stop();
 }
