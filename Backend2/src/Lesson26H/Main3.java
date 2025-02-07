@@ -6,9 +6,11 @@ public class Main3 {
 		// TODO Auto-generated method stub
 		Car car = new Car("Bmw", "M5", 2020);
 		Car car2 = new Car("Audi", "rs7", 2024);
-
-		System.out.println(car.displayInfo());
-		System.out.println(car2.displayInfo());
+		
+		Car[] cars = {car, car2};
+		for (Car car3 : cars) {
+			System.out.println(car3.toString());
+		}
 	}
 
 }

@@ -11,9 +11,10 @@ public class Person {
 		this.age = age;
 		this.city = city;
 	}
-	
+
+	@Override
 	public String toString() {
-		return "name: " + name + " age: " + age + " city: " + city;
+		return "Person [name=" + name + ", age=" + age + ", city=" + city + "]";
 	}
 
 	@Override

@@ -13,8 +13,9 @@ public class Book {
 		this.year = year;
 	}
 	
+	@Override
 	public String toString() {
-		return "title: " + title + " author: " + author + " year: " + year;
+		return "Book [title=" + title + ", author=" + author + ", year=" + year + "]";
 	}
 
 	@Override
@@ -33,7 +34,4 @@ public class Book {
 		Book other = (Book) obj;
 		return Objects.equals(author, other.author) && Objects.equals(title, other.title) && year == other.year;
 	}
-	
-	
-	
 }
